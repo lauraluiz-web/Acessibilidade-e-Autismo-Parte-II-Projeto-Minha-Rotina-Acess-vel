@@ -1,0 +1,215 @@
+/* Configurações gerais e reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: #F8FAFC; /* Fundo claro suave para conforto visual */
+  color: #1E293B; /* Texto escuro com alto contraste */
+}
+
+/* Container centralizado com largura confortável para leitura */
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Link de salto para acessibilidade via teclado */
+.pular-conteudo {
+  position: absolute;
+  left: -9999px;
+  background-color: #1E3A8A;
+  color: #FFFFFF;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pular-conteudo:focus {
+  left: 16px;
+  top: 16px;
+  z-index: 100;
+}
+
+/* Indicador de foco nítido para navegação com teclado */
+a:focus-visible {
+  outline: 3px solid #D97706;
+  outline-offset: 3px;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: #1E3A8A; /* Azul profundo calmo */
+  color: #FFFFFF;
+  padding: 32px 0;
+  border-bottom: 4px solid #0F766E;
+}
+
+.cabecalho h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.cabecalho .subtitulo {
+  font-size: 1.05rem;
+  color: #E2E8F0;
+  margin-bottom: 24px;
+}
+
+/* Menu de Navegação */
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.menu a {
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #1E3A8A;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 6px;
+}
+
+.menu a:hover {
+  background-color: #E2E8F0;
+}
+
+/* Seções */
+.secao {
+  background-color: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  padding: 28px;
+  margin-top: 28px;
+}
+
+.secao h2 {
+  font-size: 1.5rem;
+  color: #1E3A8A;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #E2E8F0;
+}
+
+.secao > p {
+  margin-bottom: 16px;
+}
+
+/* Botões */
+.grupo-botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.botao {
+  display: inline-block;
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.botao-primario {
+  background-color: #1E3A8A;
+  color: #FFFFFF;
+}
+
+.botao-primario:hover {
+  background-color: #172554;
+}
+
+.botao-secundario {
+  background-color: #0F766E;
+  color: #FFFFFF;
+}
+
+.botao-secundario:hover {
+  background-color: #115E59;
+}
+
+/* Lista da Rotina Diária */
+.lista-rotina {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.item-rotina {
+  background-color: #F1F5F9;
+  border: 1px solid #CBD5E1;
+  border-left: 6px solid #1E3A8A;
+  border-radius: 6px;
+  padding: 18px 20px;
+}
+
+.passo {
+  display: inline-block;
+  background-color: #1E3A8A;
+  color: #FFFFFF;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detalhes-atividade {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.linha-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.linha-info dt {
+  font-weight: bold;
+  color: #0F766E;
+  min-width: 135px;
+}
+
+.linha-info dd {
+  color: #1E293B;
+  margin: 0;
+}
+
+/* Lista de Dicas */
+.lista-dicas {
+  padding-left: 24px;
+  margin-top: 12px;
+}
+
+.lista-dicas li {
+  margin-bottom: 12px;
+}
+
+/* Rodapé */
+.rodape {
+  margin-top: 40px;
+  padding: 24px 0;
+  background-color: #E2E8F0;
+  color: #334155;
+  text-align: center;
+  font-size: 0.95rem;
+}
