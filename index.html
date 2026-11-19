@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Rotina Acessível</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Atalho de acessibilidade para navegação por teclado -->
+  <a href="#conteudo-principal" class="pular-conteudo">Ir para o conteúdo principal</a>
+
+  <!-- Cabeçalho -->
+  <header id="inicio" class="cabecalho">
+    <div class="container">
+      <h1>Minha Rotina Acessível</h1>
+      <p class="subtitulo">
+        Organização diária simples, clara e previsível: saiba o que fazer, quando fazer e onde fazer.
+      </p>
+
+      <!-- Menu de Navegação -->
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#rotina">Rotina Diária</a></li>
+          <li><a href="#dicas">Comunicação Clara</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main id="conteudo-principal" class="container">
+
+    <!-- Seção de Apresentação e Botões -->
+    <section class="secao" aria-labelledby="titulo-apresentacao">
+      <h2 id="titulo-apresentacao">Como usar este guia</h2>
+      <p>
+        Esta página apresenta as atividades do dia em ordem cronológica. Cada etapa mostra exatamente qual é a tarefa, o horário previsto e o local onde ela acontece.
+      </p>
+
+      <div class="grupo-botoes">
+        <a href="#rotina" class="botao botao-primario">Ver Rotina do Dia</a>
+        <a href="#dicas" class="botao botao-secundario">Dicas de Comunicação</a>
+      </div>
+    </section>
+
+    <!-- Seção: Rotina Diária (7 atividades em ordem sequencial) -->
+    <section id="rotina" class="secao" aria-labelledby="titulo-rotina">
+      <h2 id="titulo-rotina">Rotina Diária</h2>
+      <p>Siga as atividades na ordem abaixo:</p>
+
+      <ol class="lista-rotina">
+        <li class="item-rotina">
+          <span class="passo">Atividade 1</span>
+          <dl class="detalhes-atividade">
+            <div class="linha-info">
+              <dt>O que fazer:</dt>
+              <dd>Acordar, escovar os dentes e trocar de roupa</dd>
+            </div>
+            <div class="linha-info">
+              <dt>Quando fazer:</dt>
+              <dd>07h00 às 07h30</dd>
+            </div>
+            <div class="linha-info">
+              <dt>Onde fazer:</dt>
+              <dd>Quarto e Banheiro</dd>
+            </div>
+          </dl>
+        </li>
+
+        <li class="item-rotina">
+          <span class="passo">Atividade 2</span>
+          <dl class="detalhes-atividade">
+            <div class="linha-info">
+              <dt>O que fazer:</dt>
+              <dd>Tomar café da manhã e preparar a mochila</dd>
+            </div>
+            <div class="linha-info">
+              <dt>Quando fazer:</dt>
+              <dd>07h30 às 08h00</dd>
+            </div>
+            <div class="linha-info">
+              <dt>Onde fazer:</dt>
+              <dd>Cozinha</dd>
+            </div>
+          </dl>
+        </li>
+
+        <li class="item-rotina">
+          <span class="passo">Atividade 3</span>
+          <dl class="detalhes-atividade">
+            <div class="linha-info">
+              <dt>O que fazer:</dt>
+              <dd>Participar das aulas e atividades escolares</dd>
+            </div>
+            <div class="linha-info">
+              <dt>Quando fazer:</dt>
+              <dd>08h00 às 12h00</dd>
+            </div>
+            <div class="linha-info">
+              <dt>Onde fazer:</dt>
+              <dd>Escola (Sala de Aula)</dd>
+            </div>
+          </dl>
+        </li>
+
+        <li class="item-rotina">
+          <span class="passo">Atividade 4</span>
+          <dl class="detalhes-atividade">
+            <div class="linha-info">
+              <dt>O que fazer:</dt>
+              <dd>Almoçar e fazer uma pausa para descanso</dd>
+            </div>
+            <div class="linha-info">
+              <dt>Quando fazer:</dt>
+              <dd>12h15 às 13h30</dd>
+            </div>
+            <div class="linha-info">
+              <dt>Onde fazer:</dt>
+              <dd>Sala de Jantar e Quarto</dd>
+            </div>
+          </dl>
+        </li>
+
+        <li class="item-rotina">
+          <span class="passo">Atividade 5</span>
+          <dl class="detalhes-atividade">
+            <div class="linha-info">
+              <dt>O que fazer:</dt>
+              <dd>Fazer as tarefas escolares e revisar os conteúdos</dd>
+            </div>
+            <div class="linha-info">
+              <dt>Quando fazer:</dt>
+              <dd>14h00 às 15h30</dd>
+            </div>
+            <div class="linha-info">
+              <dt>Onde fazer:</dt>
+              <dd>Mesa de Estudos</dd>
+            </div>
+          </dl>
+        </li>
+
+        <li class="item-rotina">
+          <span class="passo">Atividade 6</span>
+          <dl class="detalhes-atividade">
+            <div class="linha-info">
+              <dt>O que fazer:</dt>
+              <dd>Tempo livre para leitura, desenho ou caminhada</dd>
+            </div>
+            <div class="linha-info">
+              <dt>Quando fazer:</dt>
+              <dd>16h00 às 17h30</dd>
+            </div>
+            <div class="linha-info">
+              <dt>Onde fazer:</dt>
+              <dd>Sala de Estar ou Quintal</dd>
+            </div>
+          </dl>
+        </li>
+
+        <li class="item-rotina">
+          <span class="passo">Atividade 7</span>
+          <dl class="detalhes-atividade">
+            <div class="linha-info">
+              <dt>O que fazer:</dt>
+              <dd>Jantar, tomar banho e preparar-se para dormir</dd>
+            </div>
+            <div class="linha-info">
+              <dt>Quando fazer:</dt>
+              <dd>19h30 às 21h30</dd>
+            </div>
+            <div class="linha-info">
+              <dt>Onde fazer:</dt>
+              <dd>Cozinha, Banheiro e Quarto</dd>
+            </div>
+          </dl>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Seção: Dicas de Comunicação Clara -->
+    <section id="dicas" class="secao" aria-labelledby="titulo-dicas">
+      <h2 id="titulo-dicas">Dicas de Comunicação Clara</h2>
+      <p>
+        Para tornar a rotina fácil de entender e reduzir a ansiedade diante de mudanças, aplicamos os seguintes princípios:
+      </p>
+
+      <ul class="lista-dicas">
+        <li><strong>Frases curtas e diretas:</strong> cada instrução informa apenas o essencial, sem palavras difíceis ou duplo sentido.</li>
+        <li><strong>Padrão visual repetitivo:</strong> todas as atividades seguem a mesma ordem (O que fazer, Quando fazer e Onde fazer).</li>
+        <li><strong>Sequência cronológica:</strong> as tarefas são organizadas do início ao fim do dia, facilitando a previsibilidade.</li>
+        <li><strong>Ambiente visual calmo:</strong> ausência de animações, sons automáticos ou excesso de cores chamativas.</li>
+        <li><strong>Espaçamento adequado:</strong> separação clara entre blocos para evitar sobrecarga visual na tela.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <div class="container">
+      <p>Minha Rotina Acessível — Projeto desenvolvido com HTML5 e CSS3.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
